@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phished</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1d1d1d, #3a3a3a);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .card {
+      text-align: center;
+      padding: 50px 40px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      color: #ff5555;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .emoji {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>This is my first GitHub Pages website.</p>
+  <div class="card">
+    <div class="emoji">😈</div>
+    <h1>Hahaha! You got phished.</h1>
+    <p>Next time, think before you click 😉</p>
+  </div>
 </body>
 </html>
